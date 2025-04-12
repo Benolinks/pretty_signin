@@ -43,7 +43,7 @@ sub.addEventListener("click", () => {
   setTimeout(function () {
     loaders.style.animationPlayState="paused"
     loaders.style.display="none"
-    wetcom.style.Color="green"
+    wetcom.style.color="green"
     wetcom.textContent = "welcome" +" "+
       fn.value + " " + ln.value;
      

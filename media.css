@@ -54,7 +54,7 @@
     padding-right: 15vw;
 
     padding-left: 15vw;
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
     display: flex;
     justify-content: center !important;
   }

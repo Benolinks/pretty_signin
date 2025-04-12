@@ -10,12 +10,13 @@ body {
 
 .btn {
   position: relative;
-  padding: 10px 50px;
+  padding: 20px 70px;
   z-index: 0;
   border: none;
   outline: none;
   color: #fff;
   border-radius: 12px;
+  
 }
 
 .btn::after {
@@ -28,11 +29,12 @@ body {
   left: 0;
   top: 0;
   border-radius: 12px;
+  
 }
 
 .btn::before {
   content: "";
-
+ 
   background: linear-gradient(
     55deg,
     transparent,
@@ -91,6 +93,22 @@ body {
   }
 }
 
+@keyframes ben {
+    0%{
+        transform: scale(0);
+
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+
+
+
 .in {
   display: flex;
   flex-direction: column;
@@ -133,6 +151,7 @@ body {
   border-radius: 14px;
   margin: 20px auto;
   margin-left: 20px;
+  margin-bottom: 20px;
 
   width: 150px;
 
@@ -144,8 +163,30 @@ body {
 .elements {
   display: flex;
   margin-top: -10px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
+  padding: 10px;
 
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: -15px;
+
+
+  animation-name: ben;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite ;
+  animation-fill-mode: both;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    animation-name: ben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite ;
+    animation-fill-mode: both;
+
 }

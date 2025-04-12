@@ -41,6 +41,7 @@ sub.addEventListener("click", () => {
          }, 1000)
 
   setTimeout(function () {
+    wetcom.textContent =" "
     loaders.style.animationPlayState="paused"
     loaders.style.display="none"
     wetcom.style.color="green"
@@ -53,7 +54,7 @@ sub.addEventListener("click", () => {
 });
 
 setInterval(function () {
-     wetcom.style.backgroundColor =""
+     wetcom.style.color =""
   wetcom.textContent = "";
   wetcom.textContent.disabled = true;
 }, 20000);

@@ -190,3 +190,14 @@ body {
     animation-fill-mode: both;
 
 }
+a{
+    text-decoration: navajowhite;
+}
+
+.nna{
+
+    margin-left: -30px;
+    color: white;
+    padding: 10px;
+    background: linear-gradient(#62046f, #9f33b4, #ecd138);
+}

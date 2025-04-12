@@ -54,7 +54,7 @@
     padding-right: 15vw;
 
     padding-left: 15vw;
-    /* overflow: hidden !important; */
+    overflow: hidden !important;
     display: flex;
     justify-content: center !important;
   }
@@ -73,4 +73,12 @@
     text-transform: uppercase;
     margin-top: -30px;
   }
+
+  .nna{
+
+    width: 50vw;
+    margin-left: -150px;
+    padding: 20px;
+    
+}
 }

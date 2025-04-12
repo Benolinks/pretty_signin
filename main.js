@@ -13,23 +13,23 @@ sub.addEventListener("click", () => {
         // location.reload()
         console.log("empty")
 
-        wetcom.style.backgroundColor ="red"
-        wetcom.textContent ="please Enter  Firtname"
+        wetcom.style.color ="red"
+        wetcom.textContent ="please Enter  Firstname"
 
     }else if (!ln.value) {
         console.log("empty")
-         wetcom.style.backgroundColor ="red"
+         wetcom.style.color ="red"
         wetcom.textContent ="please Enter Lastname"
     }
     else if (!pass.value){
         console.log("empty")
-         wetcom.style.backgroundColor ="red"
+         wetcom.style.color ="red"
         wetcom.textContent ="please Enter password"
         
     }
     else if (pass.value.length < 4) {
         console.log(pass.value.length)
-         wetcom.style.backgroundColor ="red"
+         wetcom.style.color ="red"
         wetcom.textContent ="password didnt match"
     }
     
@@ -43,7 +43,7 @@ sub.addEventListener("click", () => {
   setTimeout(function () {
     loaders.style.animationPlayState="paused"
     loaders.style.display="none"
-    wetcom.style.backgroundColor="green"
+    wetcom.style.Color="green"
     wetcom.textContent = "welcome" +" "+
       fn.value + " " + ln.value;
      

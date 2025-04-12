@@ -171,25 +171,10 @@ body {
   margin-top: -15px;
 
 
-  animation-name: ben;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite ;
-  animation-fill-mode: both;
+  
 }
 
-.loader{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
 
-    animation-name: ben;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite ;
-    animation-fill-mode: both;
-
-}
 a{
     text-decoration: navajowhite;
 }
@@ -200,4 +185,47 @@ a{
     color: white;
     padding: 10px;
     background: linear-gradient(#62046f, #9f33b4, #ecd138);
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  
+
+    animation-name: ben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite ;
+    animation-fill-mode: both;
+    animation-play-state: paused;
+  
+
+}
+
+.load1,.load2,.load3{
+    margin-right: 8px;
+    width: 20px;
+   /* background-color: yellow; */
+    height: 20px;
+    border-radius: 50%;
+    border: 8px solid yellow;
+ 
+
+    animation-name: ben;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite ;
+    animation-fill-mode: both;
+    transition: all 2s linear;
+}
+
+.load1{
+    animation-delay: 0s;
+}
+.load2{
+    animation-delay: .3s;
+}
+.load3{
+    animation-delay: .5s;
 }

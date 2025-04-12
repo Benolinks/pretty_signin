@@ -1,8 +1,9 @@
 @media screen and (max-width: 800px) {
   .btn {
     width: calc(75vw + 4rem);
-    padding: 70px 50vw;
+    padding: 0px 50vw;
     background-color: #fb5607;
+   
   }
   .bt {
     margin: 40px auto;

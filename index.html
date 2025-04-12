@@ -149,14 +149,52 @@
         text-align: center;
     }
 
+    .bt{
+       
+        background: linear-gradient( #2307fb,
+                #d207fb,
+                #ff006e,
+                #8338ec);
+        
+       
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 14px;
+        margin: 20px auto;
+        margin-left: 20px;
+
+        width:150px ;
+
+        font-size: 27x;
+        color: white;
+        text-align: center;
+    }
+
     @media screen and (max-width:760px) {
         .btn {
 
-           
             width: calc(75vw + 4rem);
             padding: 70px 50vw;
             background-color: #fb5607;
         }
+        .bt{
+        margin: 40px auto;
+        background: linear-gradient( #2307fb,
+                #d207fb,
+                #ff006e,
+                #8338ec);
+        width: 15rem;
+        height: 5rem;
+        margin-left: -30vw;
+        margin-right: -30px;
+        padding: 20px;
+        padding-bottom: 20px;
+        border-radius: 24px;
+
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
 
         body {
             transform: scale(0.85);
@@ -194,6 +232,7 @@
            margin: 0 auto;
             padding: 27px;
             padding-right: 15vw;
+            
             padding-left: 15vw;
             overflow: hidden !important;
             display: flex;
@@ -222,8 +261,13 @@
                         <option value="1" class="option" selected>Female</option>
                     </select>
 
+                   <input type="submit" class="bt" value="Submit">
                 </div>
+ 
+
+
             </form>
+            
         </button>
     </div>
 

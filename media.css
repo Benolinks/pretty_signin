@@ -1,0 +1,76 @@
+@media screen and (max-width: 800px) {
+  .btn {
+    width: calc(75vw + 4rem);
+    padding: 70px 50vw;
+    background-color: #fb5607;
+  }
+  .bt {
+    margin: 40px auto;
+    /* background: linear-gradient( #2307fb,
+            #d207fb,
+            #ff006e,
+            #8338ec); */
+    width: 15rem;
+    height: 5rem;
+    margin-left: -30vw;
+    margin-right: -30px;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 24px;
+
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+
+  body {
+    transform: scale(0.85);
+    margin-left: -25px;
+    margin-top: 10px;
+  }
+
+  .input,
+  .select {
+    width: 70vw;
+
+    margin-left: -40vw;
+    margin-right: -30px;
+  }
+
+  .input {
+    padding: 12px;
+  }
+
+  .sgn {
+    margin-left: -35px;
+  }
+
+  .bbt {
+    width: 80% !important;
+    height: 90vh !important;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    padding: 27px;
+    padding-right: 15vw;
+
+    padding-left: 15vw;
+    overflow: hidden !important;
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .elements {
+    display: flex;
+    width: 50vw;
+
+    padding: 20px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    /* for media  */
+    margin-left: -200px;
+    text-transform: uppercase;
+    margin-top: -30px;
+  }
+}

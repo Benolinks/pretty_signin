@@ -1,276 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glowing Signin form</title>
-</head>
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        transform: scale(1.7);
-        margin: 200px auto;
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+  </head>
 
-        background-color: #161616;
-    }
-
-
-    .btn {
-        position: relative;
-        padding: 10px 50px;
-        z-index: 0;
-        border: none;
-        outline: none;
-        color: #fff;
-        border-radius: 12px;
-
-
-
-
-    }
-
-
-    .btn::after {
-        content: '';
-        z-index: -1;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #333;
-        left: 0;
-        top: 0;
-        border-radius: 12px;
-
-    }
-
-
-    .btn::before {
-        content: '';
-
-        background: linear-gradient(55deg, transparent,
-
-
-                #2307fb,
-                #2307fb,
-                #2307fb,
-                #fb5607,
-                #d207fb,
-                #ff006e,
-                #8338ec,
-                #62046f,
-                #ecd138,
-                #3a86ff,
-                #3a7fff,
-                #ff6e3a,
-                #ff6e3a,
-                #ff6e3a,
-                #ce800c,
-                #2307fb,
-                #2307fb);
-
-
-        position: absolute;
-        top: -3px;
-        left: -3px;
-        background-size: 600px;
-        z-index: -1;
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        filter: blur(2px);
-
-        transition: opacity .3s ease-in-out;
-        border-radius: 12px;
-        padding: 1px;
-        margin: 0 auto;
-        opacity: 1;
-        animation: glowing 10s linear infinite;
-        animation-timing-function: steps(900);
-    }
-
-    @keyframes glowing {
-        0% {
-            background-position: 0, 0;
-        }
-
-        50% {
-            background-position: 200% 300%;
-
-        }
-
-        75% {
-            background-position: 0% 20%;
-        }
-
-        100% {
-            background-position: 100% 200%;
-        }
-    }
-
-    .in {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-
-
-
-
-    }
-
-    .input,
-    .select {
-        margin-top: 20px;
-        width: 200px;
-        background: transparent;
-        color: white;
-        font-size: 20px;
-        font-family: algerian;
-        border-radius: 8px;
-        box-shadow: 0 0 15px black;
-        padding: 5px;
-        outline: none;
-
-    }
-
-    .option {
-        width: 130px;
-        height: 30px;
-        background-color: #161616;
-    }
-
-    .sign {
-        font-family: algerian;
-    }
-
-
-    .h {
-        text-align: center;
-    }
-
-    .bt{
-       
-        background: linear-gradient( #2307fb,
-                #d207fb,
-                #ff006e,
-                #8338ec);
-        
-       
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 14px;
-        margin: 20px auto;
-        margin-left: 20px;
-
-        width:150px ;
-
-        font-size: 27x;
-        color: white;
-        text-align: center;
-    }
-
-    @media screen and (max-width:760px) {
-        .btn {
-
-            width: calc(75vw + 4rem);
-            padding: 70px 50vw;
-            background-color: #fb5607;
-        }
-        .bt{
-        margin: 40px auto;
-        background: linear-gradient( #2307fb,
-                #d207fb,
-                #ff006e,
-                #8338ec);
-        width: 15rem;
-        height: 5rem;
-        margin-left: -30vw;
-        margin-right: -30px;
-        padding: 20px;
-        padding-bottom: 20px;
-        border-radius: 24px;
-
-        font-size: 30px;
-        color: white;
-        text-align: center;
-    }
-
-        body {
-            transform: scale(0.85);
-            margin-left: -25px;
-            margin-top: 10px;
-           
-        }
-
-        .input,
-        .select {
-            width: 70vw;
-          
-            margin-left: -40vw;
-            margin-right: -30px;
-            
-        }
-
-
-        .input{
-            padding: 12px;
-        }
-
-
-        .sgn{
-           
-         
-            margin-left: -35px;
-
-        }
-
-        .bbt{
-            width: 80% !important;
-            height: 90vh !important;
-            /* border: 2px solid red; */
-           margin: 0 auto;
-            padding: 27px;
-            padding-right: 15vw;
-            
-            padding-left: 15vw;
-            overflow: hidden !important;
-            display: flex;
-            justify-content: center !important;
-           
-
-        }
-
-
-
-    }
-</style>
-
-<body>
-
+  <body>
     <div class="bbt">
-        <button class="btn">
-            <form action="">
-             <div class="sgn">   <h1 class="sign">Sign_In</h1></div>
-                <div class="in">
-                    <input type="text" name="" id="" placeholder="Firstname" class="input">
-                    <input type="text" name="" id="" placeholder="lasttname" class="input">
-                    <input type="password" name="" id="" placeholder="password" class="input">
-                    <select name="" id="" class="select">
-                        <option value="1" class="option">Male</option>
-                        <option value="1" class="option" selected>Female</option>
-                    </select>
+      <button class="btn">
+        <form action="" onsubmit="handleSubmit(event)">
+          <div class="sgn">
+            <h1 class="sign">Sign_In</h1>
+          </div>
+          <div class="in">
+            <input
+              type="text"
+              name=""
+              id="fn"
+              placeholder="Firstname"
+              class="input"
+            />
+            <input
+              type="text"
+              name=""
+              id="ln"
+              placeholder="lasttname"
+              class="input"
+            />
+            <input
+              type="password"
+              name=""
+              id=""
+              placeholder="password"
+              class="input"
+            />
+            <select name="" id="" class="select">
+              <option value="1" class="option">Male</option>
+              <option value="1" class="option" selected>Female</option>
+            </select>
 
-                   <input type="submit" class="bt" value="Submit">
-                </div>
- 
+            <input type="submit" class="bt" value="Submit" id="sub" />
+          </div>
 
-
-            </form>
-            
-        </button>
+          <div class="elements" id="wetcom"></div>
+        </form>
+      </button>
     </div>
-
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>

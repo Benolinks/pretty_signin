@@ -11,8 +11,8 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        transform: scale(1.9);
-        margin: 10% auto;
+        transform: scale(1.7);
+        margin: 200px auto;
 
         background-color: #161616;
     }
@@ -73,8 +73,8 @@
 
 
         position: absolute;
-        top: -2px;
-        left: -2px;
+        top: -3px;
+        left: -3px;
         background-size: 600px;
         z-index: -1;
         width: calc(100% + 4px);
@@ -152,21 +152,51 @@
     @media screen and (max-width:760px) {
         .btn {
 
+           
             width: calc(75vw + 4rem);
-            padding: 10px 50vw;
+            padding: 70px 50vw;
             background-color: #fb5607;
         }
 
         body {
-            transform: scale(0.7);
-            margin-left: -40px;
+            transform: scale(0.85);
+            margin-left: -25px;
+            margin-top: 10px;
+           
         }
 
         .input,
         .select {
-            width: calc(40vw, 12px);
+            width: calc(60vw, 7px);
+          
             margin-left: -70px;
+            margin-right: -20px;
         }
+
+
+        .sgn{
+           
+         
+            margin-left: -20px;
+
+        }
+
+        .bbt{
+            width: 80% !important;
+            height: 90vh !important;
+            /* border: 2px solid red; */
+           margin: 0 auto;
+            padding: 27px;
+            padding-right: 15vw;
+            padding-left: 15vw;
+            overflow: hidden !important;
+            display: flex;
+            justify-content: center !important;
+           
+
+        }
+
+
 
     }
 </style>
@@ -176,7 +206,7 @@
     <div class="bbt">
         <button class="btn">
             <form action="">
-                <h1 class="sign">Sign In</h1>
+             <div class="sgn">   <h1 class="sign">Sign_In</h1></div>
                 <div class="in">
                     <input type="text" name="" id="" placeholder="Firstname" class="input">
                     <input type="text" name="" id="" placeholder="lasttname" class="input">

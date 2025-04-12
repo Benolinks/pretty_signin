@@ -8,6 +8,7 @@ var wetcom = document.getElementById("wetcom");
 
 sub.addEventListener("click", () => {
     loaders.style.display="none";
+    wetcom.textContent = "";
     // num = String(pass)
     if (!fn.value) {
         // location.reload()
